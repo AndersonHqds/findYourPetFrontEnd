@@ -1,20 +1,19 @@
 import LoginForm from "../components/loginForm";
-import Card from '@material-ui/core/Card';
+
 import CardContent from '@material-ui/core/CardContent';
 import React from "react";
-import {UseStyle} from './style';
+import { PCard } from './style';
 import { Grid } from "@material-ui/core";
 
 
-const Login: React.FC = () => {
-  const classes = UseStyle();
+const Login: React.FC = () => {  
   return (
     <Grid container>
-        <Card className={classes.card}>
+        <PCard>
             <CardContent>
                 <LoginForm />
             </CardContent>
-        </Card>
+        </PCard>
     </Grid>        
   );
 };
