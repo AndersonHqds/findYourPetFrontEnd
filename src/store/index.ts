@@ -1,4 +1,4 @@
-import { repositoriesState } from "./ducks/repositories/types";
+import { repositoriesState } from "./ducks/user/types";
 import { Store } from "redux";
 import { persistStore } from 'redux-persist';
 import createSagaMiddleware from "redux-saga";

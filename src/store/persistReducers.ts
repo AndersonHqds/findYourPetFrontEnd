@@ -6,7 +6,7 @@ export default (reducers: any)  => {
     {
       key: 'findyourpet', 
       storage,
-      //whitelist: ['car'],
+      whitelist: ['user'],
     },
     reducers
   );

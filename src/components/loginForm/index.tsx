@@ -3,6 +3,7 @@ import { TextField, Button } from "@material-ui/core";
 import { LoginFormControl, ActionsButtons } from "./style";
 import PasswordInput from "../passwordInput/index";
 import { validate } from "email-validator";
+import { Link } from "react-router-dom";
 
 const LoginForm: React.FC = props => {
   const [formState, updateFormState] = useState({
@@ -74,7 +75,7 @@ const LoginForm: React.FC = props => {
         />
         <ActionsButtons>
           <Button type="submit" color="primary">
-            Cadastrar
+            <Link to="/registrar">Cadastrar</Link>            
           </Button>
           <Button type="submit" variant="outlined" color="primary">
             Login

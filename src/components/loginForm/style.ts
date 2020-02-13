@@ -8,7 +8,8 @@ export const ActionsButtons = styled.div`
   justify-content: space-between;
 `;
 export const LoginFormControl = styled.form`
+  width:80%;
   > div {
-    display: flex;
+    display: flex;    
   }
 `;

@@ -5,7 +5,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./store";
 import { ThemeProvider } from "@material-ui/core";
 import { theme } from "./theme";
-import Registrar from "./pages/registrar";
+import Register from "./pages/register";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 const App: React.FC = () => {
@@ -17,7 +17,7 @@ const App: React.FC = () => {
             <BrowserRouter>
               <Switch>
                 <Route exact path="/" component={Login} />
-                <Route path="/registrar" component={Registrar} />
+                <Route path="/registrar" component={Register} />
               </Switch>
             </BrowserRouter>
           </PersistGate>

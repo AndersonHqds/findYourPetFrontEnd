@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import repositories from "./repositories";
+import repositories from "./user";
 
 export default combineReducers({
   repositories

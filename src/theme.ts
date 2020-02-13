@@ -19,11 +19,12 @@ export const theme = createMuiTheme({
       }
     },
     MuiFormControl: {
+      
       root: {
-        margin: "15px 0"
+        margin: "30px 0"
       }
     },
-    MuiInput: {
+    MuiInput: {      
       root: {
         "&$error input": { color: "#DD0000" }
       },

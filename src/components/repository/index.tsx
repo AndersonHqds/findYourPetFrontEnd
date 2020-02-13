@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Dispatch } from "redux";
-import * as repoActions from "../../store/ducks/repositories/actions";
-import { Repository } from "../../store/ducks/repositories/types";
+import * as repoActions from "../../store/ducks/user/actions";
+import { Repository } from "../../store/ducks/user/types";
 
 const RepositoryList: React.FC = () => {
   
