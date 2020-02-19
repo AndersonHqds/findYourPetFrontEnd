@@ -2,6 +2,7 @@ import { TextField, Button } from "@material-ui/core";
 import React, { useState } from "react";
 import { PCard } from "./style";
 import { Grid } from "@material-ui/core";
+import CustomSelect from "../../components/customSelect";
 
 
 const Register: React.FC = () => {
@@ -43,6 +44,10 @@ const Register: React.FC = () => {
       error: false
     },
   });
+  const [currentEstado, updateEstado] = useState({
+    name: 'a',
+    value: 'a'
+  });
   const updateValuesFormState = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
@@ -53,7 +58,16 @@ const Register: React.FC = () => {
       [name]: { value, error: false }
     });
   };
-
+  const test = [{
+    value: 'a',
+    name: 'a'
+  },{
+    value: 'b',
+    name: 'b'
+  }]
+  const testFunc = () => {
+    console.log('testando select');
+  } 
   return(
   <>
   <Grid container>
@@ -107,7 +121,11 @@ const Register: React.FC = () => {
             error={formState.uf.error}
             helperText={formState.uf.error && "UF não selecionado"}
           />
-
+      <CustomSelect
+        items={test}
+        handleOnChange = {updateEstado}          
+        currValue={currentEstado}
+      />
       <TextField
             variant="outlined"
             label="Cidade"
